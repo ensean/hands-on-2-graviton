@@ -8,4 +8,5 @@ Collection of simple guides to Graviton2
 * [Setup Golang environment on Graviton2](docs/go_on_graviton2.md)
 * [Setup docker-compose environment on Graviton2](docs/docker_compose_on_graviton2.md)
 * [Setup MySQL8 on Graviton](docs/install_mysql8.md)
-* [MongoDB 5+ on Graviton](https://www.mongodb.com/docs/v7.0/tutorial/install-mongodb-on-amazon/)
+* [MongoDB on Graviton](https://www.mongodb.com/docs/v7.0/tutorial/install-mongodb-on-amazon/)
+* [Redis on Graviton](docs/redis_on_graviton.md)
