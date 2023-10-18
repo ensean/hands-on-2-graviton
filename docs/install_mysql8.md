@@ -8,33 +8,14 @@
 
 * Steps to install MySQL 8
 
-* Setup up repo, `/etc/yum.repos.d/mysql8.repo`. You can choose the source as your like
+1. Setup up repo
 
 ```
-[mysql-connectors-community]
-name=MySQL Connectors Community
-baseurl=https://opentuna.cn/mysql/yum/mysql-connectors-community-el7-$basearch/
-enabled=1
-gpgcheck=1
-gpgkey=https://repo.mysql.com/RPM-GPG-KEY-mysql-2022
-       https://repo.mysql.com/RPM-GPG-KEY-mysql
+sudo amazon-linux-extras install epel -y
 
-[mysql-tools-community]
-name=MySQL Tools Community
-baseurl=https://opentuna.cn/mysql/yum/mysql-tools-community-el7-$basearch/
-enabled=1
-gpgcheck=1
-gpgkey=https://repo.mysql.com/RPM-GPG-KEY-mysql-2022
-       https://repo.mysql.com/RPM-GPG-KEY-mysql
+# the latest version can be found via https://dev.mysql.com/downloads/repo/yum/
+sudo yum install https://dev.mysql.com/get/mysql80-community-release-el7-10.noarch.rpm
 
-
-[mysql-8.0-community]
-name=MySQL 8.0 Community Server
-baseurl=https://opentuna.cn/mysql/yum/mysql-8.0-community-el7-$basearch/
-enabled=1
-gpgcheck=1
-gpgkey=https://repo.mysql.com/RPM-GPG-KEY-mysql-2022
-       https://repo.mysql.com/RPM-GPG-KEY-mysql
 ```
 
 2. Commands to install mysql-server-8
